@@ -81,11 +81,14 @@
 	font-size: 1.5em;
 	line-height: 1;
 	margin: 5px 0 0 0;
-	color: #3b393d;
+	padding: 0 5px;
+	display:inline;
+	
 }
 
 .card__container--closed .card__title {
 	color: #fff;
+	background-color: black;
 }
 
 .card__subtitle {
