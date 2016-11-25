@@ -493,10 +493,10 @@
 	}
 
 	#header {
-		-moz-animation: header 1s 2.25s forwards;
-		-webkit-animation: header 1s 2.25s forwards;
-		-ms-animation: header 1s 2.25s forwards;
-		animation: header 1s 2.25s forwards;
+		-moz-animation: header 1s 2s forwards;
+		-webkit-animation: header 1s 2s forwards;
+		-ms-animation: header 1s 2s forwards;
+		animation: header 1s 2s forwards;
 		-moz-backface-visibility: hidden;
 		-webkit-backface-visibility: hidden;
 		-ms-backface-visibility: hidden;
@@ -523,7 +523,7 @@
 		}
 
 		#header p {
-			font-size: 1.25em;
+			font-size: 2em;
 			margin: 0.75em 0 0.25em 0;
 			opacity: 0.75;
 		}
@@ -680,7 +680,7 @@
 		background-image: linear-gradient(top, rgba(0,0,0,0), rgba(0,0,0,0.5) 75%);
 		bottom: 0;
 		cursor: default;
-		height: 6em;
+		height: 7em;
 		left: 0;
 		line-height: 8em;
 		position: absolute;
@@ -960,7 +960,7 @@
 		}
 
 		#header p {
-			font-size: 1em;
+			font-size: 1.25em;
 		}
 
 		#header nav {
@@ -1056,3 +1056,42 @@
 		#header nav {
 			padding: 0 1em;
 		} }
+
+ /* Canvas */
+
+ 	canvas {
+		display: inline-block;
+    vertical-align: baseline;
+	}
+
+	/* Button Ghost Light */
+
+	.btn-ghost-light, .btn-ghost-light:link, .btn-ghost-light:visited {
+	border: 2px solid rgba(255, 255, 255, 0.7);
+	margin-bottom: .5em;
+	margin-right: 15px;
+	position: relative;
+	background-color: white;
+	background-color: rgba(255, 255, 255, 0);
+	color: rgba(255, 255, 255, 0.7);
+	-webkit-tap-highlight-color: transparent;
+	-webkit-transition: all .3s ease;
+	        transition: all .3s ease;
+	}
+	.btn-ghost-light:hover, .btn-ghost-light:focus {
+	border-color: #fff;
+	color: #383838;
+	background-color: #fff;
+	}
+	.btn-ghost-light:active {
+	background-color: #ebebeb;
+	color: #383838;
+	}
+
+	.btn-ghost-light:before {
+		-moz-animation: all 8s ease-in-out forwards;
+		-webkit-animation: all 8s ease-in-out forwards;
+		-ms-animation: all 8s ease-in-out forwards;
+		animation: all 2s ease-in-out forwards;
+		animation-delay: 4.5s;
+	}

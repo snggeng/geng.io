@@ -14,16 +14,16 @@
 		<!--[if lte IE 8]><link rel="stylesheet" href="assets/css/ie8.css" /><![endif]-->
 		<!--[if lte IE 9]><link rel="stylesheet" href="assets/css/ie9.css" /><![endif]-->
 	</head>
-	<body class="loading">
+	<body>
 		<div id="wrapper">
-			<div id="bg"></div>
-			<div id="overlay"></div>
+			<!-- <div id="bg"></div>
+			<div id="overlay"></div> -->
 			<div id="main">
 
 				<!-- Header -->
-					<header id="header">
+					<header id="header" style="z-index: 1;">
 						<h1>Geng Sng</h1>
-						<p>Developer &nbsp;&bull;&nbsp; Duke University &nbsp;&bull;&nbsp; Technologist</p>
+						<p>Web Developer &nbsp;&bull;&nbsp; Duke University &nbsp;&bull;&nbsp; Will code for coffee</p>
 						<nav>
 							<ul>
 								<li><a href="https://twitter.com/snggeng" class="icon fa-twitter"><span class="label">Twitter</span></a></li>
@@ -36,17 +36,41 @@
 					</header>
 				<!-- Footer -->
 					<footer id="footer">
-						<span class="copyright">&copy; Geng Sng</span>
+						<button class="btn-ghost-light" id="regenerate" onClick="window.location.reload()">
+							<span class="icon fa-refresh"> REGENERATE</span>
+						</button>
 					</footer>
-
 			</div>
 		</div>
 
 		<!--[if lte IE 8]><script src="assets/js/ie/respond.min.js"></script><![endif]-->
+
+		<script src="https://cdnjs.cloudflare.com/ajax/libs/trianglify/0.4.0/trianglify.min.js"></script>
 		<script>
+			var pattern = Trianglify({
+				width: window.innerWidth,
+				height: window.innerHeight,
+				cell_size: 90,
+				variance: 1,
+				stroke_width: 1,
+				x_colors: 'random',
+				y_colors: 'random'
+			})
+			document.body.appendChild(pattern.canvas())
+			document.body.onkeyup = function(e){
+    		if(e.keyCode == 32){
+        window.location.reload();
+    		}
+			}
+			// window.onload(
+			//
+			// 	// document.body.getElementById("regenerate")
+			// )
+		</script>
+		<!-- <script>
 			window.onload = function() { document.body.className = ''; }
 			window.ontouchmove = function() { return false; }
 			window.onorientationchange = function() { document.body.scrollTop = 0; }
-		</script>
+		</script> -->
 	</body>
 </html>
