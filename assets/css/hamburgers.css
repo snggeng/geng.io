@@ -43,19 +43,7 @@
   transition: 0.5s;
   border-radius: 2.5rem;
 }
-.navicon:before {
-  display: block;
-  content: "";
-  height: .3125rem;
-  width: 2.5rem;
-  background: #FFF;
-  position: absolute;
-  z-index: -1;
-  transition: 0.5s 0.25s;
-  border-radius: 1rem;
-}
-
-.navicon:after {
+.navicon:before, .navicon:after {
   display: block;
   content: "";
   height: .3125rem;
