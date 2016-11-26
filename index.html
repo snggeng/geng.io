@@ -47,14 +47,15 @@
 
 		<script src="https://cdnjs.cloudflare.com/ajax/libs/trianglify/0.4.0/trianglify.min.js"></script>
 		<script>
+			var randomColors = ['Reds', 'Blues', 'Purples', 'YlOrRd', 'YlGnBu', 'GnBu', 'YlOrBr', 'Oranges', 'PuRd']
 			var pattern = Trianglify({
 				width: window.innerWidth,
 				height: window.innerHeight,
 				cell_size: 90,
 				variance: 1,
 				stroke_width: 1,
-				x_colors: 'random',
-				y_colors: 'random'
+				x_colors: randomColors[Math.floor(Math.random()*randomColors.length)]
+				// y_colors: 'random'
 			})
 			document.body.appendChild(pattern.canvas())
 			document.body.onkeyup = function(e){
