@@ -1069,7 +1069,6 @@
 	.btn-ghost-light, .btn-ghost-light:link, .btn-ghost-light:visited {
 	border: 2px solid rgba(255, 255, 255, 0.7);
 	margin-bottom: .5em;
-	margin-right: 15px;
 	position: relative;
 	background-color: white;
 	background-color: rgba(255, 255, 255, 0);
