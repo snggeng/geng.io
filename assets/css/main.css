@@ -1051,6 +1051,10 @@
 			width: 1237.5px;
 		}
 
+		#regenerate {
+			/*html: 'COLOUR';*/
+		}
+
 	/* Header */
 
 		#header nav {
