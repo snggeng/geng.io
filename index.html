@@ -35,14 +35,20 @@
 							</ul>
 						</nav>
 					</header>
+					<!-- The actual snackbar -->
+					<div id="snackbar">Press Spacebar to refresh!</div>
 				<!-- Footer -->
 					<footer id="footer">
+
 						<button class="btn-ghost-light" id="regenerate" onClick="window.location.reload()">
-							<span class="icon fa-refresh">COLOR</span>
+							<span class="icon fa-refresh"> COLOR</span>
 						</button>
 					</footer>
 			</div>
 		</div>
+		<!-- Use a button to open the snackbar -->
+		<!-- <button onclick="snackbar()">Show Snackbar</button> -->
+
 
 		<!--[if lte IE 8]><script src="assets/js/ie/respond.min.js"></script><![endif]-->
 
@@ -64,10 +70,28 @@
         window.location.reload();
     		}
 			}
-			// window.onload(
-			//
-			// 	// document.body.getElementById("regenerate")
-			// )
+
+			function snackbar() {
+			    // Get the snackbar DIV
+			    var x = document.getElementById("snackbar")
+
+			    // Add the "show" class to DIV
+			    x.className = "show";
+
+			    // After 3 seconds, remove the show class from DIV
+					setTimeout(function(){ x.className = x.className.replace("show", ""); }, 3000);
+
+			}
+
+			// run snackbar onload
+			snackbar();
+			// var p = new Promise (function(resolve, reject) {
+      //       window.location.reload();
+      //   })
+			// 	p.then(snackbar());
+			// new Promise (function trigger() {
+			// 	snackbar(); window.location.reload();
+			// })
 		</script>
 		<!-- <script>
 			window.onload = function() { document.body.className = ''; }
