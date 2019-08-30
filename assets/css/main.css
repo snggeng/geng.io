@@ -1141,3 +1141,15 @@ However, delay the fade out process for 2.5 seconds */
     from {bottom: 30px; opacity: 1;}
     to {bottom: 0; opacity: 0;}
 }
+
+.under-construction {
+	height: 80%;
+	width: 100%;
+}
+
+#under-construction-title {
+	color: black;
+	text-align: center;
+	font-size: 40px;
+	font-weight: 500;
+}
