@@ -34,21 +34,26 @@ const Layout = ({ children }) => {
           paddingTop: 0,
         }}
       >
-        <main>
-        <div className="row center-xs">
-          <div className="col-xs-12
-                      col-sm-8
-                      col-md-6
-                      col-lg-4">
+        <main className="row left-lg">
+          <div className="col-lg">
               <div className="box">{children}</div>
           </div>
-        </div>
+          <div className="col-xs-16
+                col-sm-12
+                col-md-8
+                col-lg-6">
+            <div className="box">Responsive</div>
+          </div>
         </main>
-        <footer>
-          © {new Date().getFullYear()}, Built with
-          {` `}
-          <a href="https://www.gatsbyjs.org">Gatsby</a>
-        </footer>
+        <div className="row bottom-center">
+          <div className="col-xs-6">
+              <footer>
+                © {new Date().getFullYear()} All rights reserved.
+                {` `}
+                <a href="https://geng.io">Geng Sng</a>
+              </footer>
+          </div>
+        </div>
       </div>
     </>
   )
