@@ -34,7 +34,16 @@ const Layout = ({ children }) => {
           paddingTop: 0,
         }}
       >
-        <main>{children}</main>
+        <main>
+        <div className="row center-xs">
+          <div className="col-xs-12
+                      col-sm-8
+                      col-md-6
+                      col-lg-4">
+              <div className="box">{children}</div>
+          </div>
+        </div>
+        </main>
         <footer>
           © {new Date().getFullYear()}, Built with
           {` `}
