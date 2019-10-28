@@ -35,7 +35,7 @@ const Layout = ({ children }) => {
         }}
       >
         <main className="row left-lg">
-          <div className="col-lg">
+          <div className="col-xs-4 col-sm-4 col-md-4col-lg-2">
               <ul className="sidebar">
                 <li>
                   <Link to="/page-2/" className="page-link">
