@@ -619,3 +619,15 @@ pre tt:after {
     font-size: 100%;
   }
 }
+
+.sidebar {
+    list-style-type: none;
+}
+
+.page-link {
+  color: black;
+  text-decoration: none;
+}
+.page-link:hover {
+  color: lightblue;
+}

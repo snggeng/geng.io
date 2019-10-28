@@ -8,6 +8,7 @@
 import React from "react"
 import PropTypes from "prop-types"
 import { useStaticQuery, graphql } from "gatsby"
+import { Link } from "gatsby"
 
 import Header from "./header"
 import "./layout.css"
@@ -29,20 +30,28 @@ const Layout = ({ children }) => {
       <div
         style={{
           margin: `0 auto`,
-          maxWidth: 960,
           padding: `0px 1.0875rem 1.45rem`,
           paddingTop: 0,
         }}
       >
         <main className="row left-lg">
           <div className="col-lg">
-              <div className="box">{children}</div>
+              <ul className="sidebar">
+                <li>
+                  <Link to="/page-2/" className="page-link">
+                    <b>💻 Projects</b>
+                  </Link> 
+                </li>
+                <li><b>📌 Posts</b></li>
+                <li><b>👋 About Me</b></li>
+                <li><b>⚡️ Besides Work</b></li>
+              </ul>
           </div>
           <div className="col-xs-16
                 col-sm-12
                 col-md-8
                 col-lg-6">
-            <div className="box">Responsive</div>
+            <div className="box">{children}</div>
           </div>
         </main>
         <div className="row bottom-center">
