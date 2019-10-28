@@ -38,13 +38,25 @@ const Layout = ({ children }) => {
           <div className="col-xs-4 col-sm-4 col-md-4col-lg-2">
               <ul className="sidebar">
                 <li>
-                  <Link to="/page-2/" className="page-link">
+                  <Link to="/" className="page-link">
                     <b>💻 Projects</b>
                   </Link> 
                 </li>
-                <li><b>📌 Posts</b></li>
-                <li><b>👋 About Me</b></li>
-                <li><b>⚡️ Besides Work</b></li>
+                <li>
+                  <Link to="/posts" className="page-link">
+                    <b>📌 Posts</b>
+                  </Link>
+                </li>
+                <li>
+                  <Link to="/about-me" className="page-link">
+                    <b>👋 About Me</b>
+                  </Link>
+                </li>
+                <li>
+                  <Link to="/besides-work" className="page-link">
+                    <b>⚡️ Besides Work</b>
+                  </Link>
+                </li>
               </ul>
           </div>
           <div className="col-xs-16
@@ -57,9 +69,8 @@ const Layout = ({ children }) => {
         <div className="row bottom-center">
           <div className="col-xs-6">
               <footer>
-                © {new Date().getFullYear()} All rights reserved.
+                © All rights reserved.
                 {` `}
-                <a href="https://geng.io">Geng Sng</a>
               </footer>
           </div>
         </div>
