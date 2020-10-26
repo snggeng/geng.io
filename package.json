@@ -1,22 +1,45 @@
 {
-  "name": "personal-website",
-  "version": "1.0.0",
-  "description": "Aerial by HTML5 UP\r html5up.net | @ajlkn\r Free for personal and commercial use under the CCA 3.0 license (html5up.net/license)",
-  "main": "index.js",
+  "name": "geng.io",
+  "private": true,
+  "description": "Personal website of Geng Sng",
+  "version": "0.1.0",
+  "author": "Geng Sng <snggeng@gmail.com>",
+  "dependencies": {
+    "flexboxgrid": "^6.3.1",
+    "gatsby": "^2.15.35",
+    "gatsby-image": "^2.2.27",
+    "gatsby-plugin-manifest": "^2.2.21",
+    "gatsby-plugin-offline": "^3.0.14",
+    "gatsby-plugin-react-helmet": "^3.1.11",
+    "gatsby-plugin-sharp": "^2.2.29",
+    "gatsby-plugin-web-font-loader": "^1.0.4",
+    "gatsby-source-filesystem": "^2.1.31",
+    "gatsby-transformer-sharp": "^2.2.21",
+    "prop-types": "^15.7.2",
+    "react": "^16.10.2",
+    "react-dom": "^16.10.2",
+    "react-helmet": "^5.2.1"
+  },
+  "devDependencies": {
+    "prettier": "^1.18.2"
+  },
+  "keywords": [
+    "gatsby"
+  ],
+  "license": "MIT",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "build": "gatsby build",
+    "develop": "gatsby develop",
+    "format": "prettier --write \"**/*.{js,jsx,json,md}\"",
+    "start": "npm run develop",
+    "serve": "gatsby serve",
+    "test": "echo \"Write tests! -> https://gatsby.dev/unit-testing \""
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/snggeng/geng.io.git"
+    "url": "https://github.com/gatsbyjs/gatsby-starter-default"
   },
-  "author": "",
-  "license": "ISC",
   "bugs": {
-    "url": "https://github.com/snggeng/geng.io/issues"
-  },
-  "homepage": "https://github.com/snggeng/geng.io#readme",
-  "dependencies": {
-    "animate.css": "^3.5.2"
+    "url": "https://github.com/gatsbyjs/gatsby/issues"
   }
 }
