@@ -8,7 +8,7 @@ const BesidesWorkPage = () => (
   <Layout>
     <SEO title="Besides Work" />
     <h1>Besides Work</h1>
-    <p>Lorem ipsum</p>
+    <p>Coming soon</p>
   </Layout>
 )
 

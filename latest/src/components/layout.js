@@ -26,7 +26,7 @@ const Layout = ({ children }) => {
 
   return (
     <>
-      <Header siteTitle={data.site.siteMetadata.title} />
+      {/* <Header siteTitle={data.site.siteMetadata.title} /> */}
       <div
         style={{
           margin: `0 auto`,
@@ -34,8 +34,9 @@ const Layout = ({ children }) => {
           paddingTop: 0,
         }}
       >
-        <main className="row left-lg">
-          <div className="col-xs-4 col-sm-4 col-md-4col-lg-2">
+        <main>
+            {/* <input type="checkbox" id="menu-icon"/>
+            <aside className="aside-bar">
               <ul className="sidebar">
                 <li>
                   <Link to="/" className="page-link">
@@ -58,21 +59,21 @@ const Layout = ({ children }) => {
                   </Link>
                 </li>
               </ul>
-          </div>
-          <div className="col-xs-16
-                col-sm-12
-                col-md-8
-                col-lg-6">
-            <div className="box">{children}</div>
-          </div>
+            </aside>
+            <label htmlFor="menu-icon">
+              <span className="bar top"></span>
+              <span className="bar middle"></span>
+              <span className="bar bottom"></span>
+            </label> */}
+            <div className="content">
+              <div className="inner">{children}</div>
+            </div>
         </main>
         <div className="row bottom-center">
-          <div className="col-xs-6">
-              <footer>
-                © All rights reserved.
-                {` `}
-              </footer>
-          </div>
+          <footer>
+            © All rights reserved.
+            {` `}
+          </footer>
         </div>
       </div>
     </>
