@@ -1,0 +1,2 @@
+(window.webpackJsonp=window.webpackJsonp||[]).push([[7],{257:function(e,n,t){"use strict";t.r(n);var a=t(0),l=t.n(a),o=t(252),s=t(251);n.default=function(){return l.a.createElement(o.a,null,l.a.createElement(s.a,{title:"Posts"}),l.a.createElement("h1",null,"Posts"),l.a.createElement("p",null,"Coming soon"))}}}]);
+//# sourceMappingURL=component---src-pages-posts-js-e6a3e1cb6a8b9f5a596f.js.map

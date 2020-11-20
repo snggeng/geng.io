@@ -1,0 +1,2 @@
+(window.webpackJsonp=window.webpackJsonp||[]).push([[5],{255:function(e,n,t){"use strict";t.r(n);var a=t(0),l=t.n(a),o=(t(70),t(252)),r=t(251);n.default=function(){return l.a.createElement(o.a,null,l.a.createElement(r.a,{title:"Besides Work"}),l.a.createElement("h1",null,"Besides Work"),l.a.createElement("p",null,"Coming soon"))}}}]);
+//# sourceMappingURL=component---src-pages-besides-work-js-86a05fdd63fe4364572d.js.map
